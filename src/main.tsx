@@ -1,4 +1,3 @@
-
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -12,6 +11,7 @@ import Origin from './pages/Origin'
 import FAQs from './pages/FAQs'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import { ShopProvider } from './shop'   // ← add this
 
 const router = createBrowserRouter([
   {
@@ -32,6 +32,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ShopProvider>                  {/* ← wrap everything */}
+      <RouterProvider router={router} />
+    </ShopProvider>
   </React.StrictMode>
 )
