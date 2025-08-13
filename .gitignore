@@ -1,0 +1,7 @@
+kapunka-site/node_modules
+kapunka-site/dist
+.vscode
+.netlify
+.env
+.env.*
+.DS_Store
