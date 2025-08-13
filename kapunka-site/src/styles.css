@@ -1,0 +1,18 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typography rhythm */
+.display {
+  @apply font-serif text-4xl md:text-5xl leading-tight;
+}
+.eyebrow {
+  @apply uppercase tracking-widest text-xs text-deepcharcoal/70;
+}
+.cta {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 bg-deepcharcoal text-white hover:bg-richdarkbrown transition;
+}
+.link {
+  @apply underline underline-offset-4 decoration-1 hover:decoration-2;
+}
